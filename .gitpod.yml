@@ -1,12 +1,12 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: LocalStack init & start
+  - name: LocalStack
   - init: >
       echo 'init LocalStack install' &&
       pip install localstack
   - command: localstack start
       
-  - name: AWS CLI & SAM install
+  - name: AWS CLI and SAM
   - init: >
       echo 'init AWS SAM install' &&
       pip install aws-sam-cli &&
